@@ -5,10 +5,9 @@
 import player
 
 class Grid():
-    def __init__(self, week, name, selection):
+    def __init__(self, week, name):
         self.week = week
         self.name = name
-        self.selection = selection
 
     # self.week = 1
     # self.name = "big tito"
@@ -49,10 +48,11 @@ class Grid():
                     #self.name = player.__name__
                     row_print.append(f'{self.name}')
                 elif square == "selection":
-                    row_print.append(f'{self.selection}')
+                    row_print.append("go birds")
                 else:
                     pass
             print("\t".join(row_print))
 
-test = Grid(1, "BIG TITO", "birds")
+        
+test = Grid(1, "BIG TITO")
 test.print_grid()
